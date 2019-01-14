@@ -3,26 +3,64 @@
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 20px;
     color: #444;
     text-align: center;
     line-height: 1.5;
   }
   
-  nav,
+  a {
+    
+    
+  }
+  
+  
   footer {
     padding: 1% 0;
     background-color: #aaa;
   }
   
   nav {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    width: 100%;
+    padding: 1% 0;
+  }
+
+  .brand {
+    float: left;
+    margin-left: 15%;
+  }
+
+  .brand img {
+    height: 40px;
+  }
+  .email {
+    float: right;
+    margin-right: 15%;
+  }
+
+  .email a {
+    border: #60b0f4 solid 2px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #60b0f4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .email a:hover {
+    background-color: #60b0f4;
+    color: #fff;
+  }
+
+  .fa-envelope {
+    padding-right: 5px;
   }
   
   
