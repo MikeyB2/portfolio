@@ -26,9 +26,9 @@
         </div>
     </nav>
     <main role="main">
-        <header role="banner">
+        <header role="banner" class="developer">
             <h1>Full Stack Developer | Front-end Developer</h1>
-            <p>I write beautiful reusable code, and I love every minute of it.</p>
+            <p>I write beautiful reusable code and I love every minute of it.</p>
             <!-- <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="x" height="y"></video> -->
             <!-- <img src="./image/algorithm.svg" /> need to edit size -->
         </header>
@@ -37,7 +37,7 @@
             <h1>Hero Image</h1>
         </section>
 
-        <section>
+        <section class="about">
             <h2>Hi! I'm Mike Bryant. It is great to meet you.</h2>
             <p>I was introduced to the world of web development over 5 years ago. Since that day I have not been able
                 to stop pushing myself to learn the most advanced and most practiced techniques to write the best code
@@ -46,89 +46,113 @@
 
         <section>
             <h1>Recent Projects</h1>
-            <div class="project1">
-                <h2>Jabber Jaw</h2>
-                <div>
-                    <p>Jabber Jaw is a chat app that allows you to create chat channels/rooms that you can chat with
-                        other
-                        people.</p>
+            <div class="projects">
+                <div class="project1">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./image/jabberJaw.png" alt="" style="width:100%;height:300px;">
+                                <div>
+                                    <h2>Jabber Jaw</h2>
+                                    <p>Jabber Jaw is a chat app that allows you to create chat channels/rooms that you
+                                        can chat
+                                        with
+                                        other
+                                        people.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Technologies Used:</h2>
+                                <div class="flip">
+                                    <ul class="front">
+                                        <h4>Front-End:</h4>
+                                        <i class="fab fa-react"></i> React | Redux
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>ES6</li>
+                                        <li>Javascript</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                    <ul class="back">
+                                        <h4>Backend:</h4>
+                                        <li> Node</li>
+                                        <li> Express</li>
+                                        <li> Moch</li>
+                                        <li> Chai</li>
+                                        <li>MongoDB</li>
+                                        <li> Travis CI</li>
+                                        <li> bcrypt.js</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>Live App:
+                                        <a href="https://jabber-jaw.herokuapp.com/">https://jabber-jaw.herokuapp.com/</a>
+                                    </p>
+                                    <p>Repo Link:
+                                        <a href="https://github.com/MikeyB2/jabber-jaw-client">https://github.com/MikeyB2/jabber-jaw-client</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    Technologies Used:
+                <div class="project2">
+                    <h2>Cstm Made</h2>
 
-                    Front-End:
-                    <i class="fab fa-react"></i> React | Redux
+
+                    <p>Cstm Made is a meal planner/ recipe book/ shopping-list. You can add recipes and then select
+                        those
+                        recipes for your meals.
+                        When you add the recipe to the meal planner it will add all the ingredients to your
+                        shopping-list
+                        automatically.</p>
+
+                    Technologies Used: Front-End
+
                     HTML5
                     CSS3
                     ES6
                     Javascript
                     jQuery
-                </div>
-                <div>
-                    Backend:
-                    Node
-                    Express
-                    Moch
-                    Chai
+                    Back-End
+
+                    <i class="fab fa-node-js"></i>Node.JS
                     MongoDB
+                    Mocha
+                    Chai
                     Travis CI
                     bcrypt.js
+
+                    Live App: <a href="https://cstm-made.herokuapp.com/">https://cstm-made.herokuapp.com/</a> Repo
+                    Link: <a href="https://github.com/MikeyB2/travis-ci">https://github.com/MikeyB2/travis-ci</a>
+
                 </div>
-                Live App:<a href="https://jabber-jaw.herokuapp.com/">https://jabber-jaw.herokuapp.com/</a> Repo Link:
-                <a href="https://github.com/MikeyB2/jabber-jaw-client">https://github.com/MikeyB2/jabber-jaw-client</a>
-            </div>
-            <div class="project2">
-                <h2>Cstm Made</h2>
+                <div class="project3">
+                    <h2>Movie Scrum</h2>
 
+                    <p>Movie Scrum is Movie and TV show search site. You can search by keywords, movie title,
+                        actor/actress
+                        and it will return all movies or shows that include what you searched by.
+                        By clicking on the movie or show poster you can watch the trailer for the selected movie or
+                        show.
+                        You
+                        also can click the link to imdb for more information about the movie or show.</p>
+                    <div>
+                        Technologies Used:
 
-                <p>Cstm Made is a meal planner/ recipe book/ shopping-list. You can add recipes and then select those
-                    recipes for your meals.
-                    When you add the recipe to the meal planner it will add all the ingredients to your shopping-list
-                    automatically.</p>
+                        <span><i class="fab fa-html5"></i>HTML5</span>
+                        <i class="fab fa-css3-alt"></i>CSS3
+                        <i class="fab fa-js-square"></i>Javascript
+                        jQuery
 
-                Technologies Used: Front-End
-
-                HTML5
-                CSS3
-                ES6
-                Javascript
-                jQuery
-                Back-End
-
-                <i class="fab fa-node-js"></i>Node.JS
-                MongoDB
-                Mocha
-                Chai
-                Travis CI
-                bcrypt.js
-
-                Live App: <a href="https://cstm-made.herokuapp.com/">https://cstm-made.herokuapp.com/</a> Repo Link: <a
-                    href="https://github.com/MikeyB2/travis-ci">https://github.com/MikeyB2/travis-ci</a>
-
-            </div>
-            <div class="project3">
-                <h2>Movie Scrum</h2>
-
-                <p>Movie Scrum is Movie and TV show search site. You can search by keywords, movie title, actor/actress
-                    and it will return all movies or shows that include what you searched by.
-                    By clicking on the movie or show poster you can watch the trailer for the selected movie or show.
-                    You
-                    also can click the link to imdb for more information about the movie or show.</p>
-                <div>
-                    Technologies Used:
-
-                    <span><i class="fab fa-html5"></i>HTML5</span>
-                    <i class="fab fa-css3-alt"></i>CSS3
-                    <i class="fab fa-js-square"></i>Javascript
-                    jQuery
-
-                    Live App: <a href="https://mikeyb2.github.io/MovieApi/">https://mikeyb2.github.io/MovieApi/</a>
-                    Repo Link: <a href="https://github.com/MikeyB2/MovieApi">https://github.com/MikeyB2/MovieApi</a>
+                        Live App: <a href="https://mikeyb2.github.io/MovieApi/">https://mikeyb2.github.io/MovieApi/</a>
+                        Repo Link: <a href="https://github.com/MikeyB2/MovieApi">https://github.com/MikeyB2/MovieApi</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="skills">
             <div>Languages that I speak</div>
             <ul>
                 <li>React | Redux</li>
@@ -141,7 +165,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="contact">
             <h3>Interested in my abilities or want to work together?</h3>
             <p>I am always open to a chat and would love to speak to you about your ideas.</p>
             <span>modal form</span>
@@ -153,10 +177,8 @@
         <div><i class="fab fa-github"></i><i class="fab fa-twitter"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-angellist"></i><i
                 class="fab fa-stack-overflow"></i></div>
         <div>Designed by me <i class="far fa-copyright"></i> twentynineteen</div>
-        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/"
-                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
