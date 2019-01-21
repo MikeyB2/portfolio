@@ -446,7 +446,13 @@ section {
     font-weight: 700;
 }
 
-.header .nav .navItem:hover {
+.navItem a {
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.navItem a:hover {
+    text-decoration: none;
     color: #60b0f4;
 }
 
@@ -587,6 +593,16 @@ section {
 .work {
     background: #ebf0f1;
     width: 100%
+}
+
+.work a {
+    text-decoration: none;
+    color: #60b0f4;
+}
+
+.work a:hover {
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .social a {
@@ -961,7 +977,7 @@ section {
 }
 
 .contact .h2 {
-    color: #fcfcfc
+    color: #60b0f4
 }
 
 .contact form {
