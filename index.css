@@ -1,4 +1,4 @@
-abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -134,7 +134,7 @@ button,input[type=button] {
     overflow: visible
 }
 
-footer {
+.footer {
     padding: 1% 0;
     background-color: #aaa;
     width: 100%;
@@ -375,7 +375,8 @@ section {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     margin-left: 2px;
-    border: 2px solid #60b0f4
+    border: 2px solid #60b0f4;
+    background-color: #60b0f4;
 }
 
 .header .logo {
@@ -473,6 +474,7 @@ section {
 .modal nav.mobile .nav {
     float: right;
     width: 100%;
+    color: #fff;
     text-align: right
 }
 
@@ -480,19 +482,17 @@ section {
     padding: 12px;
     font-size: 1.6em;
     border-bottom: 1px solid #999;
+    color: #fff;
     cursor: pointer
 }
 
 .modal .closeModal {
     position: absolute;
-    top: -8px;
+    top: 10px;
     right: 155px;
     color: #f8f8f8;
-    font-size: 3em;
-    border: 2px solid;
-    padding: 13px 23px 14px;
-    -webkit-border-radius: 45px;
-    border-radius: 45px;
+    font-size: 40px;
+    padding: 13px 15px 14px;
     cursor: pointer
 }
 
@@ -627,12 +627,6 @@ section {
     z-index: 4
 }
 
-@media only screen and (max-width: 850px) {
-    .workSection .hamburger {
-        display:none
-    }
-}
-
 .workSection .hamburger .bun {
     float: left;
     height: 12px;
@@ -640,6 +634,7 @@ section {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     margin-left: 2px;
+    background-color: #60b0f4;
     border: 2px solid #60b0f4
 }
 
@@ -775,7 +770,8 @@ section {
 
 @media only screen and (min-width: 640px) {
     .workSectionExample .iPhone {
-        position:absolute
+        position:absolute;
+        display: none
     }
 }
 
@@ -843,45 +839,11 @@ section {
     height: 311px
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #cstm .workSectionExample .macBookPro {
-        -webkit-background-size: 600px 311px;
-        -moz-background-size: 600px 311px;
-        background-size: 600px 311px
-    }
-}
-
 .work #cstm .workSectionExample .iPhone {
     width: 267px;
     height: auto;
     top: 50px;
     right: 0
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #cstm .workSectionExample .iPhone {
-        -webkit-background-size: 267px 560px;
-        -moz-background-size: 267px 560px;
-        background-size: 267px 560px
-    }
-}
-
-@media only screen and (min-width: 640px) {
-    .work #cstm .workSectionExample .iPhone {
-        -webkit-background-size: 133px 280px;
-        -moz-background-size: 133px 280px;
-        background-size: 133px 280px;
-        height: 280px;
-        width: 133px
-    }
-
-    @media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-        .work #cstm .workSectionExample .iPhone {
-            -webkit-background-size: 133px 280px;
-            -moz-background-size: 133px 280px;
-            background-size: 133px 280px
-        }
-    }
 }
 
 .work #jabber.workSection .hamburger {
@@ -913,45 +875,11 @@ section {
     height: 311px
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #jabber .workSectionExample .macBookPro {
-        -webkit-background-size: 600px 311px;
-        -moz-background-size: 600px 311px;
-        background-size: 600px 311px
-    }
-}
-
 .work #jabber .workSectionExample .iPhone {
     width: 267px;
     height: auto;
     top: 50px;
     left: 0
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #jabber .workSectionExample .iPhone {
-        -webkit-background-size: 267px 560px;
-        -moz-background-size: 267px 560px;
-        background-size: 267px 560px
-    }
-}
-
-@media only screen and (min-width: 640px) {
-    .work #jabber .workSectionExample .iPhone {
-        -webkit-background-size: 133px 280px;
-        -moz-background-size: 133px 280px;
-        background-size: 133px 280px;
-        height: 280px;
-        width: 133px
-    }
-
-    @media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-        .work #jabber .workSectionExample .iPhone {
-            -webkit-background-size: 133px 280px;
-            -moz-background-size: 133px 280px;
-            background-size: 133px 280px
-        }
-    }
 }
 
 .work #travel {
@@ -983,47 +911,6 @@ section {
 .work #travel .workSectionExample .macBookPro {
     width: 600px;
     height: 311px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #travel .workSectionExample .macBookPro {
-        -webkit-background-size: 600px 311px;
-        -moz-background-size: 600px 311px;
-        background-size: 600px 311px
-    }
-}
-
-.work #travel .workSectionExample .iPhone {
-    width: 267px;
-    height: 560px;
-    top: 50px;
-    left: 0
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #travel .workSectionExample .iPhone {
-        -webkit-background-size: 267px 560px;
-        -moz-background-size: 267px 560px;
-        background-size: 267px 560px
-    }
-}
-
-@media only screen and (min-width: 640px) {
-    .work #travel .workSectionExample .iPhone {
-        -webkit-background-size: 133px 280px;
-        -moz-background-size: 133px 280px;
-        background-size: 133px 280px;
-        height: 280px;
-        width: 133px
-    }
-
-    @media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-        .work #travel .workSectionExample .iPhone {
-            -webkit-background-size: 133px 280px;
-            -moz-background-size: 133px 280px;
-            background-size: 133px 280px
-        }
-    }
 }
 
 .work #movieScrum {
@@ -1066,48 +953,6 @@ section {
     height: 311px
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #movieScrum .workSectionExample .macBookPro {
-        background-image:url();
-        -webkit-background-size: 600px 311px;
-        -moz-background-size: 600px 311px;
-        background-size: 600px 311px
-    }
-}
-
-.work #movieScrum .workSectionExample .iPhone {
-    background: url();
-    width: 267px;
-    height: 560px;
-    top: 50px;
-    left: 0
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-    .work #movieScrum .workSectionExample .iPhone {
-        -webkit-background-size: 267px 560px;
-        -moz-background-size: 267px 560px;
-        background-size: 267px 560px
-    }
-}
-
-@media only screen and (min-width: 640px) {
-    .work #movieScrum .workSectionExample .iPhone {
-        -webkit-background-size: 133px 280px;
-        -moz-background-size: 133px 280px;
-        background-size: 133px 280px;
-        height: 280px;
-        width: 133px
-    }
-
-    @media all and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
-        .work #movieScrum .workSectionExample .iPhone {
-            -webkit-background-size: 133px 280px;
-            -moz-background-size: 133px 280px;
-            background-size: 133px 280px
-        }
-    }
-}
 
 .contact {
     background: #30393e;
@@ -1192,134 +1037,4 @@ section {
     display: none
 }
 
-.ie-lt9 .label {
-    display: block
-}
 
-.thankYou {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1.2em;
-    display: none;
-    clear: both
-}
-
-@-moz-keyframes gravatar {
-    0% {
-        opacity: 0;
-        -ms-filter: "alpha(Opacity=0)";
-        filter: alpha(opacity=0)
-    }
-
-    100% {
-        opacity: 1;
-        -ms-filter: none;
-        filter: none
-    }
-}
-
-@-webkit-keyframes gravatar {
-    0% {
-        opacity: 0;
-        -ms-filter: "alpha(Opacity=0)";
-        filter: alpha(opacity=0)
-    }
-
-    100% {
-        opacity: 1;
-        -ms-filter: none;
-        filter: none
-    }
-}
-
-@-o-keyframes gravatar {
-    0% {
-        opacity: 0;
-        -ms-filter: "alpha(Opacity=0)";
-        filter: alpha(opacity=0)
-    }
-
-    100% {
-        opacity: 1;
-        -ms-filter: none;
-        filter: none
-    }
-}
-
-@-ms-keyframes gravatar {
-    0% {
-        opacity: 0;
-        -ms-filter: "alpha(Opacity=0)";
-        filter: alpha(opacity=0)
-    }
-
-    100% {
-        opacity: 1;
-        -ms-filter: none;
-        filter: none
-    }
-}
-
-@keyframes gravatar {
-    0% {
-        opacity: 0;
-        -ms-filter: "alpha(Opacity=0)";
-        filter: alpha(opacity=0)
-    }
-
-    100% {
-        opacity: 1;
-        -ms-filter: none;
-        filter: none
-    }
-}
-
-@-moz-keyframes logo {
-    0% {
-        margin-top: -80px
-    }
-
-    100% {
-        margin-top: -20px
-    }
-}
-
-@-webkit-keyframes logo {
-    0% {
-        margin-top: -80px
-    }
-
-    100% {
-        margin-top: -20px
-    }
-}
-
-@-o-keyframes logo {
-    0% {
-        margin-top: -80px
-    }
-
-    100% {
-        margin-top: -20px
-    }
-}
-
-@-ms-keyframes logo {
-    0% {
-        margin-top: -80px
-    }
-
-    100% {
-        margin-top: -20px
-    }
-}
-
-@keyframes logo {
-    0% {
-        margin-top: -80px
-    }
-
-    100% {
-        margin-top: -20px
-    }
-}
