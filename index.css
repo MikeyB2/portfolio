@@ -4,7 +4,15 @@
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: 0 0
+    background: 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease
 }
 
 article,aside,details,figure,footer,header,nav,section,summary {
@@ -21,15 +29,6 @@ html {
 
 ul {
     list-style: none
-}
-
-blockquote,q {
-    quotes: none
-}
-
-blockquote:after,blockquote:before,q:after,q:before {
-    content: '';
-    content: none
 }
 
 a {
@@ -160,12 +159,6 @@ button,input[type=button] {
 .clearfix {
     zoom:1}
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
 .chromeframe {
     position: absolute;
     top: 0
@@ -183,62 +176,10 @@ body,input,select,textarea {
     color: #2c2223
 }
 
-
-::-moz-selection {
-    background: #3584d8;
-    color: #fff;
-    text-shadow: none
-}
-
-::selection {
-    background: #3584d8;
-    color: #fff;
-    text-shadow: none
-}
-
-a:link {
-    -webkit-tap-highlight-color: #fcd700
-}
-
-ins {
-    background-color: #fcd700;
-    color: #000;
-    text-decoration: none
-}
-
-mark {
-    background-color: #fcd700;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
-}
-
-::-webkit-input-placeholder {
-    color: #aaa
-}
-
-::-moz-placeholder {
-    color: #aaa
-}
-
-:-ms-input-placeholder {
-    color: #aaa
-}
-
-:-moz-placeholder {
-    color: #aaa
-}
-
 .fab:hover {
     color: #60b0f4;
 }
-* {
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    transition: all .4s ease
-}
+
 
 section {
     width: 100%;
