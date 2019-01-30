@@ -216,6 +216,11 @@ section {
     font-weight: 400
 }
 
+.h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
 .sh1 {
     font-size: 1.6em;
     font-weight: 700;
@@ -457,7 +462,7 @@ section {
     transition: none
 }
 
-.top .h1,.top .h3 {
+.top .h1,.top .h3, .top .h4 {
     color: #fff;
     margin: 20px auto 0;
     width: 100%
@@ -741,6 +746,71 @@ section {
 
 .workSectionExample .iPad,.workSectionExample .macBookPro {
     display: none
+}
+
+.macBookPro {
+    position: relative;
+}
+
+.iPhone {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+.macBookPro:hover .image {
+    opacity: 0.3;
+  }
+  
+  .macBookPro:hover .middle {
+    opacity: 1;
+  }
+
+.iPhone:hover .image {
+    opacity: 0.3;
+  }
+  
+  .iPhone:hover .middle {
+    opacity: 1;
+  }
+
+  .iPhone .goToSite {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+.goToSite {
+  background-color: #60b0f4;
+  color: white;
+  font-size: 16px;
+  padding: 16px 30px;
+  border-radius: 15px;
+}
+
+.goToSite a {
+    color: #e4e4e4;
+}
+
+.fa-arrow-alt-circle-right {
+    padding-left: 10px;
 }
 
 @media only screen and (min-width: 640px) {
