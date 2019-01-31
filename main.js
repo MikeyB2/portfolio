@@ -43,5 +43,10 @@ $(document).ready(function () {
             $(".workSection .hamburger, .workSection .close").click(function () {
                 $(this).parent(".workSection").toggleClass("showing-more")
             })
+        }(),
+        function () {
+            $(".workSectionExample .goToDetails").click(function () {
+                $(this).parent(".middle").parent(".macBookPro, .iphone").parent(".workSectionExample").parent(".workSection").toggleClass("showing-more");
+            })
         }()
 })

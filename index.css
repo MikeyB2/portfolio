@@ -36,7 +36,8 @@ a {
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: 0 0
+    background: 0 0;
+    cursor: pointer;
 }
 
 del {
@@ -120,7 +121,7 @@ code,kbd,pre,samp {
     font-family: monospace,sans-serif
 }
 
-.clickable,button,input[type=button],input[type=file],input[type=submit],label {
+.clickable,button,input[type=button],input[type=file],input[type=submit],label, a {
     cursor: pointer
 }
 
@@ -512,7 +513,7 @@ section {
 @media only screen and (min-width: 750px) {
     .skills .skillBox {
         float:left;
-        min-height: 470px;
+        min-height: 505px;
         width: 30%;
         margin-left: 2.5%
     }
@@ -718,6 +719,22 @@ section {
     filter: none
 }
 
+.workSection .other {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    /* -ms-filter: "alpha(Opacity=0)";
+    filter: alpha(opacity=0) */
+}
+
+.workSection:hover .other {
+    display: block;
+}
+
+.details:hover {
+    cursor: pointer;
+}
+
 .workSectionExample {
     clear: both
 }
@@ -743,8 +760,7 @@ section {
         display: none
     }
 }
-
-.workSectionExample .iPad,.workSectionExample .macBookPro {
+.workSectionExample .macBookPro {
     display: none
 }
 
@@ -765,16 +781,16 @@ section {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-  .image {
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
+}
 
 .macBookPro:hover .image {
     opacity: 0.3;
@@ -797,6 +813,11 @@ section {
     padding: 10px 20px;
   }
 
+  .iPhone .goToDetails {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
 .goToSite {
   background-color: #60b0f4;
   color: white;
@@ -805,7 +826,23 @@ section {
   border-radius: 15px;
 }
 
+
+
 .goToSite a {
+    color: #e4e4e4;
+}
+
+.goToDetails {
+    background-color: #777;
+    color: white;
+    font-size: 16px;
+    padding: 16px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+.goToDetails a {
     color: #e4e4e4;
 }
 
@@ -814,7 +851,7 @@ section {
 }
 
 @media only screen and (min-width: 640px) {
-    .workSectionExample .iPad,.workSectionExample .macBookPro {
+    .workSectionExample .macBookPro {
         display:block
     }
 }
@@ -839,7 +876,8 @@ section {
 .workSectionInfo a {
     font-size: 1.4em;
     text-decoration: none;
-    color: #777
+    color: #777;
+    cursor: pointer;
 }
 
 .workSectionHeader {
@@ -899,7 +937,7 @@ section {
 }
 
 @media only screen and (min-width: 920px) {
-    .work #jabber .workSectionExample {
+    .work #jabber .workSectionExample .macBookPro{
         float:left
     }
 }
